@@ -1,0 +1,141 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    box-sizing: border-box;
+}
+
+body {
+    background: #454545;
+    color: #fff;
+}
+
+
+.nav{
+    width: 100%;
+    height: 10vh;
+    
+}
+
+.nav img{
+    width: 18vw;
+    height: 10vh;
+    margin: 9px;
+}
+
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+   
+}
+
+.left, .right {
+    flex-basis: 50%;
+    padding: 10px;
+}
+
+.left {
+    display: flex;
+    margin-left: -19px;
+}
+
+.html,.css,.js{
+    width: 32vw;
+    padding-left: 20px;
+}
+
+
+.CodeMirror{
+    width: 30.7vw;
+    height: 60vh;
+    background: #1f1f1f;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+}
+
+#output {
+    width: 100%;
+    height: 95vh;
+    background-color: white;
+    border: 0;
+    outline: 0;
+}
+
+label i {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    background: black;
+    height: 30px;
+} 
+
+.html .html-nav{
+display: flex;
+justify-content: space-evenly;
+}
+.html .html-nav label{
+    width: 32vw;
+}
+
+.html .html-nav #export-html{
+    background-color: black;
+    color: white;
+    font-size: 19px;
+    border: 0;
+    padding-right: 7px;
+}
+.html .html-nav #importhtml{
+    font-size: 19px;
+    width: 40px;
+    padding-top: 1px;
+}
+.css .css-nav{
+    display: flex;
+    }
+.css .css-nav label{
+    width: 32vw;
+}
+
+.css .css-nav #export-css{
+    background-color: black;
+    color: white;
+    font-size: 19px;
+    border: 0;
+    padding-right: 7px;
+}
+.css .css-nav #importcss{
+    font-size: 19px;
+    width: 40px;
+    padding-top: 1px;
+}
+
+
+.js .js-nav{
+    display: flex;
+}
+.js .js-nav label{
+    width: 32vw;
+}
+
+.js .js-nav #export-js{
+    background-color: black;
+    color: white;
+    font-size: 19px;
+    border: 0;
+    padding-right: 7px;
+}
+.js .js-nav #importjs{
+    font-size: 19px;
+    width: 40px;
+    padding-top: 1px;
+}

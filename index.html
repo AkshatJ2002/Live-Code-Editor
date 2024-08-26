@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeSafe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/dracula.min.css">
+</head>
+<body>
+    <div class="nav">
+        <img src="logo.png" alt="">
+    </div>
+    <div class="container">
+        <div class="left">
+            <div class="html">
+                <div class="html-nav">
+                  <label><i class="fa-brands fa-html5"></i> HTML</label>
+                  <input type="file" id="import-html" style="display:none" />
+                  <label for="import-html" id="importhtml"><i class="fa-solid fa-upload"></i></label>
+                  <button id="export-html"><i class="fa-solid fa-download"></i></button>
+                </div>
+                <textarea id="html-code" data-language="html"></textarea>
+                
+            </div>
+            <div class="css">
+                <div class="css-nav">
+                    <label><i class="fa-brands fa-css3-alt"></i> CSS</label>
+                    <input type="file" id="import-css" style="display:none" />
+                    <label for="import-css" id="importcss"><i class="fa-solid fa-upload"></i></label>
+                    <button id="export-css"><i class="fa-solid fa-download"></i></button>
+                </div>
+                <textarea id="css-code" data-language="css"></textarea>
+                
+            </div>
+            <div class="js">
+                <div class="js-nav">
+                    <label><i class="fa-brands fa-js"></i> JavaScript</label>
+                    <input type="file" id="import-js" style="display:none" />
+                    <label for="import-js" id="importjs"><i class="fa-solid fa-upload"></i></label>
+                    <button id="export-js"><i class="fa-solid fa-download"></i></button>
+                </div>
+                <textarea id="js-code" data-language="javascript"></textarea>
+               
+            </div>
+        </div>
+        <div class="right">
+            <label><i class="fa-solid fa-play"></i> Output</label>
+            <iframe id="output"></iframe>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/c5bfacb8bf.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/xml/xml.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/css/css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/edit/matchbrackets.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/edit/closebrackets.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeSafe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/dracula.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <label><i class="fa-brands fa-html5"></i> HTML</label>
+            <textarea id="html-code" onkeyup="run()"></textarea>
+            <label ><i class="fa-brands fa-css3-alt"></i> CSS</label>
+            <textarea id="css-code" onkeyup="run()"></textarea>
+            <label ><i class="fa-brands fa-js"></i> Javascript</label>
+            <textarea id="js-code" onkeyup="run()"></textarea>
+        </div>
+        <div class="right">
+            <label><i class="fa-solid fa-play"></i>Output</label>
+            <iframe id="output"></iframe>
+
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/c5bfacb8bf.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html> -->
+
